@@ -1,6 +1,6 @@
 # Emmanuel Ngwoke - Portfolio Website
 
-[!Portfolio Preview](https://your-live-link-here.com)
+[!Portfolio Preview](https://emma001code.github.io/My-web-resume-design.github.io/)
 
 A modern, responsive portfolio website showcasing my skills, projects, and professional journey as a software engineering student.
 
@@ -43,8 +43,9 @@ A modern, responsive portfolio website showcasing my skills, projects, and profe
 ### Installation
 
 1. Clone the repository:
-   git clone https://github.com/your-username/your-repo.git
-   Easy if you are using ubuntu terminal not powershell
+
+- git clone https://github.com/Emma001code/My-web-resume-design.github.io.git
+- Easy if you are using ubuntu terminal not powershell in vscode
 
 2. Navigate to the project directory
 
