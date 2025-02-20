@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic setup for responsiveness and character encoding -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Page title shown in browser tabs -->
+    <title>Emmanuel Ngwoke - Portfolio</title>
+
+    <!-- Font and icon resources -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    
+    <!-- Local stylesheet connection -->
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Main JavaScript file loads after HTML parses -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Main site navigation -->
+    <nav>
+      <!-- Branding/logo element -->
+      <div class="logo">NCE</div>
+      
+      <!-- Desktop navigation links -->
+      <ul class="nav-links">
+        <li><a href="#profile" class="nav-item">Profile</a></li>
+        <li><a href="#education" class="nav-item">Education</a></li>
+        <li><a href="#skills" class="nav-item">Skills</a></li>
+        <li><a href="#projects" class="nav-item">Projects</a></li>
+        <li><a href="#resume" class="nav-item">Resume</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+      
+      <!-- Mobile menu trigger (handled in JavaScript) -->
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Hero/landing section -->
+    <section class="hero">
+      <div class="container">
+        <!-- Dynamic heading populated by JavaScript -->
+        <h1></h1>
+        <!-- Subheading initially hidden for animation -->
+        <p style="opacity: 0">
+          Software Engineer | AI Enthusiast | Problem Solver | web3 Enthusiast
+        </p>
+      </div>
+    </section>
+
+    <!-- Profile section with bio -->
+    <section id="profile" class="container">
+      <h2>Profile Bio</h2>
+      <div class="profile-bio">
+        <!-- Profile image -->
+        <img src="Assets/Emmapics.jpg" alt="Emmanuel Ngwoke - Profile Photo" />
+        <!-- Personal introduction -->
+        <p>
+          Hi! I'm Emmanuel Ngwoke, a software engineering student at ALU
+          passionate about creating impactful web applications. With skills in
+          HTML, CSS, JavaScript, and Java, I aim to solve real-world challenges
+          and push the boundaries of what's possible. Dedicated to learning and
+          innovation, I'm excited to build solutions that make a difference.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education history section -->
+    <section id="education" class="container">
+      <h2>Education</h2>
+      <div class="education-grid">
+        <!-- Education item cards -->
+        <div class="education-card">
+          <h3>Sciences</h3>
+          <p>City Comprehensive High School (2018-2022)</p>
+        </div>
+        
+        <!-- University card with external link -->
+        <div class="education-card">
+          <h3>Software Engineering</h3>
+          <p>
+            <a href="https://alueducation.com" target="_blank" class="education-link">
+              African Leadership University (2024-2027)
+            </a>
+          </p>
+        </div>
+        
+        <!-- Certification card with PDF download -->
+        <div class="education-card">
+          <h3>ALX Virtual Assistant Graduate</h3>
+          <p>
+            <a href="Assets/Alx_VA_Cert.pdf" target="_blank" class="education-link">           
+              Download Certificate
+            </a>
+          </p> <!-- Fixed closing tag -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical skills showcase -->
+    <section id="skills" class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <!-- Individual skill cards with icons -->
+        <div class="skill-card">
+          <i class="fab fa-python"></i>
+          <h3>Python</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-react"></i>
+          <h3>React</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-aws"></i>
+          <h3>AWS</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects showcase section -->
+    <section id="projects" class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <!-- Fll program Project card -->
+        <div class="project-card">
+            <img src="Assets/lego.jpeg" alt="FLL Robotics Program" />
+            <h3>Robots creation (Where my team emerged as the winner)</h3>
+            <p>Python, JavaScript, on-hand activities</p>
+        </div>
+        
+        <!-- Clickable project card (replace YOUR_APP_URL_HERE) -->
+        <a href="https://elites.msilab.rw" 
+           class="project-card clickable" 
+           target="_blank" 
+           rel="noopener noreferrer">
+            <img src="Assets/elites.jpeg" alt="Elites website" />
+            <h3>Elites Think-Tank Website</h3>
+            <p>HTML, Css, JavaScript</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Resume download section -->
+    <section id="resume" class="container">
+      <div class="section-header">
+          <h2>Resume</h2>
+      </div>
+      <div class="resume-section">
+          <p>Download my latest resume:</p>
+          <!-- Download link with Font Awesome icon -->
+          <a href="Assets/Updated resume.png" 
+             class="btn" 
+             download="Emmanuel_Ngwoke_Resume">
+              <i class="fas fa-download"></i> Download PNG
+          </a>
+      </div>
+    </section>
+
+    <!-- Contact section with social links -->
+    <section id="contact" class="container">
+      <div class="contact-header">
+        <h2>Contact Me</h2>
+        <!-- Social media links -->
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/emmanuelngwoke" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Emma001code" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Contact form using Formspree service -->
+      <form class="contact-form" id="contactForm" 
+            action="https://formspree.io/f/myzklyyy" 
+            method="POST">
+        <!-- Form inputs -->
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        
+        <!-- Hidden anti-spam field -->
+        <input type="text"
+               name="_gotcha"
+               style="display: none !important"
+               tabindex="-1"
+               autocomplete="off" />
+        
+        <!-- Submit button -->
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Site footer -->
+    <footer>
+      <p>&copy; 2025 Emmanuel Ngwoke. All rights reserved.</p>
+    </footer>
+  </
