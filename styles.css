@@ -630,6 +630,11 @@ footer {
 /* Maintain hover effects */
 .project-card:hover {
     transform: translateY(-10px) translateX(0) !important;
-}
+}     
 
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
   
